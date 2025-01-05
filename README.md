@@ -1,12 +1,43 @@
-# Private-Chatbot
-Offline Chatbot for Private Document Interaction (Free and Secure)
+# PrivateGPT Chatbot
 
-Architecture of a CHATBOT
-<img width="930" alt="SCR-20230917-qbto" src="https://github.com/abidsaudagar/Private-Chatbot/assets/20873579/e9c34bae-b697-4f11-b332-886ae298bc2b">
+## Overview
+PrivateGPT is a chatbot designed to answer questions based on your documents. It ensures privacy by processing everything locally.
 
-## Tech-stack used:
-1. Langchain
-2. GPT4all LLM
-3. Sentence Transformer embeddings
-3. Chroma Vector DataBase
-4. Python 3.10 +
+## Features
+- Document ingestion and vector storage using Weaviate.
+- Retrieval-based Q&A with LangChain and HuggingFace.
+- Simple frontend using Streamlit.
+- Backend powered by FastAPI.
+
+## Setup Instructions
+# Steps to Run the Project
+
+1. Clone the Repository
+```bash
+git clone https://github.com/your_username/privateGPT.git
+cd privateGPT
+```
+2. Install Dependencies
+```bash
+conda create -n privategpt_env python=3.10 -y
+conda activate privategpt_env
+pip install -r requirements.txt
+```
+3. Prepare and process Documents 
+Place your .pdf and .txt documents in the *source_documents/* directory. Then run:
+```bash
+python ingest.py
+```
+This creates a local FAISS vectorstore for your documents.
+
+4. Rub Chatbot
+Start the chatbot by running:
+```bash
+python app.py
+```
+5. Use the Web Interface
+Run the Streamlit UI:
+```bash
+streamlit run app_ui.py
+```
+Open the displayed URL in your browser to interact with the chatbot.
