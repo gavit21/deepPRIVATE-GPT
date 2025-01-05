@@ -12,7 +12,7 @@ PrivateGPT is a chatbot designed to answer questions based on your documents. It
 ## Workflow
 ![ChatBot Workflow](https://github.com/gavit21/deepPRIVATE-GPT/blob/main/workflow_1.png)
 ![Workflow](https://github.com/gavit21/deepPRIVATE-GPT/blob/main/chatbot.drawio(1).png)
-![ChatBot](https://github.com/gavit21/deepPRIVATE-GPT/blob/abc.png)
+![ChatBot](https://github.com/gavit21/deepPRIVATE-GPT/blob/main/abc.png)
 ## Setup Instructions
 
 1. Clone the Repository
