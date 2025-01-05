@@ -9,8 +9,9 @@ PrivateGPT is a chatbot designed to answer questions based on your documents. It
 - Simple frontend using Streamlit.
 - Backend powered by FastAPI.
 
+## Workflow
+![ChatBot Workflow](https://github.com/gavit21/deepPRIVATE-GPT/blob/main/workflow_1.png)
 ## Setup Instructions
-# Steps to Run the Project
 
 1. Clone the Repository
 ```bash
@@ -28,7 +29,7 @@ Place your .pdf and .txt documents in the *source_documents/* directory. Then ru
 ```bash
 python ingest.py
 ```
-This creates a local FAISS vectorstore for your documents.
+ This creates a local FAISS vectorstore for your documents.
 
 4. Rub Chatbot
 Start the chatbot by running:
